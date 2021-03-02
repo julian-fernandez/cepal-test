@@ -1,0 +1,21 @@
+.map-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.mapboxgl-popup {
+  max-width: 400px;
+  font: 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.marker{
+  height:100px;
+  width:100px;
+}
+
+.mapboxgl-popup{
+  transform:none !important;
+  top: 30px;
+  left: 15px;
+  }

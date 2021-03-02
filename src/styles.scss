@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  margin:0;
+}
+mgl-map {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.map-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.mapboxgl-popup {
+  max-width: 400px;
+  font: 12px/20px "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.mapboxgl-marker{
+  cursor:pointer;
+}
+
+.mapboxgl-popup{
+  transform:none !important;
+  top: 30px;
+  left: 15px;
+  height:90%;
+  .mapboxgl-popup-content{
+    height:100%;
+    width:300px; 
+  }
+  }
+
+
+.mapboxgl-popup-close-button{
+  outline:none;
+}

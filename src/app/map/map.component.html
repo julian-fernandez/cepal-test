@@ -1,0 +1,37 @@
+<!-- <app-mapacepal
+[style]="'mapbox://styles/mapbox/streets-v9'"
+[zoom]="[9]"
+[center]="[-74.50, 40]"
+(mapLoad)="map = $event"
+></app-mapacepal> -->
+<mgl-map *ngIf="geojson"
+      [style]="'mapbox://styles/ffirpo/ckkcxtf162clq17nis548dlzv'"
+      [center]="[-87.637596, 41.940403]"
+      [zoom]="[12]"
+      (load)="onMapLoad($event)"
+    >
+    
+      <!-- <mgl-control mglGeocoder [searchInput]="'Paris'"
+      ></mgl-control> -->
+      <mgl-control
+        mglGeolocate
+        [positionOptions]="{
+          enableHighAccuracy: true
+        }"
+        [trackUserLocation]="true"
+      ></mgl-control>
+      <mgl-control mglNavigation></mgl-control>
+      <mgl-control mglScale position="bottom-right"></mgl-control>
+      <!-- <mgl-marker *ngFor="let feature of geojson.features; let i = index" [feature]="feature" #myMarker>
+      </mgl-marker> -->
+      <!-- <mgl-popup [marker]="myMarker">Test Popup</mgl-popup> -->
+      <ng-container *ngFor="let feature of geojson.features">
+        <mgl-marker #myMarker [feature]="feature">
+        </mgl-marker>
+        <mgl-popup [marker]="myMarker">
+          <h3>{{feature.properties.title}}</h3>
+          <p>{{feature.properties.description}}</p>
+        </mgl-popup>
+      </ng-container>
+
+    </mgl-map>

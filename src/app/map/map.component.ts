@@ -2,9 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Marker } from 'mapbox-gl';
 import { MapService } from '../map.service';
-import { Map as MapboxMap } from 'mapbox-gl';
 import * as MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
-import { environment } from 'src/environments/environment';
 import mapboxgl from 'mapbox-gl';
 @Component({
   selector: 'app-map',

@@ -7,6 +7,8 @@ import { MapComponent } from './map/map.component';
 import { PopupComponent } from './popup/popup.component';
 import { MapacepalComponent } from './mapacepal/mapacepal.component';
 import { NgxMapboxGLModule } from 'ngx-mapbox-gl';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { NgxMapboxGLModule } from 'ngx-mapbox-gl';
     HttpClientModule,
     NgxMapboxGLModule.withConfig({
       accessToken: 'pk.eyJ1IjoiZmZpcnBvIiwiYSI6ImNraWl6MWlsMDAzdzAyc252YmVzajRlOHgifQ.TeEXBvMPb9YoHfLD8eTx0Q'
-    })
+    }),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]

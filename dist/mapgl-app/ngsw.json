@@ -1,0 +1,93 @@
+{
+  "configVersion": 1,
+  "timestamp": 1614778070499,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main-es2015.e4cce237beaffa29f0a9.js",
+        "/main-es5.e4cce237beaffa29f0a9.js",
+        "/manifest.webmanifest",
+        "/polyfills-es2015.3cdbcdced0ddbba3a4ef.js",
+        "/polyfills-es5.fa95497a12cf8163bd63.js",
+        "/runtime-es2015.a4dadbc03350107420a4.js",
+        "/runtime-es5.a4dadbc03350107420a4.js",
+        "/styles.4683dc6bc700155e8eab.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/chicago-parks.geojson",
+        "/assets/espacios_de_cuidados.geojson",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/marker-editor.svg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/chicago-parks.geojson": "85713ab05a8c887e8c3bd9a49993e69b6f16653f",
+    "/assets/espacios_de_cuidados.geojson": "2c51be9d03074c4039ecd9039b0fa02312782285",
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/marker-editor.svg": "f80b77eb6252ce79421109eae0bc010382469bd5",
+    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/index.html": "04d26028e7d5e63e7e7da46b5033cf1db20d4a62",
+    "/main-es2015.e4cce237beaffa29f0a9.js": "d48fe8771d4a2942d675fb019399c7acda42d8b9",
+    "/main-es5.e4cce237beaffa29f0a9.js": "e271af5dac70a3e8887b71d5576699202d6e4ae2",
+    "/manifest.webmanifest": "5b6bd5b695c1ba892a499efc0355a3fbd0c0bf15",
+    "/polyfills-es2015.3cdbcdced0ddbba3a4ef.js": "0cfc62beb7b649446ebff63f48426a2f22b06349",
+    "/polyfills-es5.fa95497a12cf8163bd63.js": "06466fc2c6171c9a4427bc1d9b368257b2115674",
+    "/runtime-es2015.a4dadbc03350107420a4.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/runtime-es5.a4dadbc03350107420a4.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/styles.4683dc6bc700155e8eab.css": "ea5ec3874b89e959dca8d27207402014cc7f2b20"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
